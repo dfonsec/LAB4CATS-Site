@@ -1,3 +1,9 @@
 body {
     background-color: #CBDDD1;
+    font-family: 'HK Grotesk', sans-serif;                                         
+}
+
+.title { 
+    text-align: center
+    
 }
