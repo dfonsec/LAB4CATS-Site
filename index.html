@@ -5,20 +5,24 @@
     <title>Action Attention Project</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.cdnfonts.com/css/hk-groteks" rel="stylesheet">
-                
+        
 </head>
 <body>
     <div class="title">
         <h1>Attention and Feature Representation in Spatiotemporal Networks</h1>
     </div>
+
     <h2 class="section-heading">Overview</h2>
+
     <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m
     inim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co
     mmodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess
     e cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no
     n proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
     <h2 class="section-heading">How can we asses the accuracy of current model analysis tools?</h2>
+
     <p class="text-content">Eleifend quam adipiscing vitae proin sagittis nisl. Co
         nsectetur a erat nam at lectus urna duis. Congue mauris rhoncus aenean vel
         . Lectus sit amet est placerat. Dignissim suspendisse in est ante in nibh 
@@ -29,5 +33,19 @@
          orci phasellus egestas.</p>
 
 
+    <div id="interactive-content">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+                $(document).ready(function() {
+                $.ajax({
+                    url: 'imgs/fast_000000.html',
+                success: function(data) {
+                    $('#interactive-content').html(data);
+                }
+                });
+            });
+        </script>
+    </div>
+   
 </body>
 </html>
