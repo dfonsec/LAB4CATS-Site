@@ -5,5 +5,14 @@ body {
 
 .title { 
     text-align: center
-    
+}
+
+.section-heading{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.text-content{
+    text-align: center;
+
 }
