@@ -33,6 +33,8 @@
          orci phasellus egestas.</p>
 
 
+    <button onclick="hide()"> Hide Element </button>
+    <button onclick="show()"> Show Element </button>
     <div id="interactive-content">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
@@ -45,7 +47,16 @@
                 });
             });
         </script>
-    </div>
+    </div><br>
+    <script>
+       function hide() {
+          document.getElementById('interactive-content').hidden = true
+       }
+       function show() {
+          document.getElementById('interactive-content').hidden = false
+       }
+    </script>
+
    
 </body>
 </html>
