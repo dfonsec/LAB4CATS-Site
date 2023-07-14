@@ -37,8 +37,9 @@
             <img class="imgs" src="imgs/HeatMap-IMG.png">
     </div>
     
-    <div style="text-align: center;"">
+    <div class ="button-container" style="text-align: center;"">
         <button onclick="show()" id="toggle-content" role="button">Show Live Heat Map</button>
+    </div>
         <div id="interactive-content">
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
@@ -53,7 +54,7 @@
                 });
             </script>
         </div>
-    </div>
+   
     <script>
        function show() {
             if (document.getElementById('interactive-content').hidden) {
@@ -81,12 +82,25 @@
    <h2 class="section-heading">Authors</h2>
 
    <div class="author-imgs">
-        <img class="author-item" src="imgs/headshots/headshot.jpeg">
-        <img class="author-item" src="imgs/headshots/cwloka.png">
+        <div class="author-container">
+            <img class="author-item" src="imgs/headshots/headshot.jpeg">
+            Dan Fonseca
+        </div>
+        <div class="author-container">
+            <img class="author-item" src="imgs/headshots/cwloka.png">
+            Calden Wloka
+        </div>
    </div>
 
 
    <h2 class="section-heading">Further Reading</h2>
+
+   <ul>
+    <li>Selvaraju, Ramprasaath R., et al. “Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization.” International Journal of Computer Vision, vol. 128, no. 2, Oct. 2019, pp. 336–59.</li>
+    <li> Feichtenhofer, Christoph, et al. "SlowFast Networks for Video Recognition." Facebook AI Research (FAIR), 2020</li>
+    <li>Zhu, Yi, et al. "A Comprehensive Study of Deep Video Action Recognition." Amazon Web Services, 2021</li>
+  </ul>
+    
 
 
 
