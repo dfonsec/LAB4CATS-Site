@@ -38,7 +38,7 @@
     </div>
     
     <div style="text-align: center;"">
-        <button onclick="show()" id="toggle-content">Hide Live Heat Map</button>
+        <button onclick="show()" id="toggle-content">Show Live Heat Map</button>
         <div id="interactive-content">
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
@@ -49,6 +49,7 @@
                         $('#interactive-content').html(data);
                     }
                     });
+                    document.getElementById('interactive-content').hidden = true
                 });
             </script>
         </div>
@@ -67,5 +68,18 @@
             }
        };
     </script>
+
+<h2 class="section-heading">Are existing action attention recognition models biased towards spatial or temporal features?</h2>
+
+<p class="text-content">Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Diam donec adipiscing tristique risus nec. Tempor commodo
+   ullamcorper a lacus vestibulum sed arcu. Congue quisque egestas diam in arcu cursus euismod quis. Nisl tincidunt eget nullam 
+   non. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Odio ut enim blandit volutpat maecenas volu
+   tpat blandit. Lobortis feugiat vivamus at augue eget arcu dictum varius. Nisl rhoncus mattis rhoncus urna neque. Id leo in v
+   itae turpis massa sed elementum tempus.</p>
+
+
+
+
+
 </body>
 </html>
