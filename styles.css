@@ -43,7 +43,6 @@ body {
     height: 150px;
     width: 150px;
     object-fit: contain;
-    border: 12px solid #CBDDD1;
 }
 
 #toggle-content{ 
