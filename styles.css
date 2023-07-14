@@ -1,7 +1,15 @@
+
+
 body {
     background-color: #F6F6E9;
     font-family: 'HK Grotesk', sans-serif;
     box-sizing: border-box;                                         
+}
+
+
+
+[hidden] {
+  display: none !important;
 }
 
 
@@ -52,6 +60,13 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+#interactive-content { 
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  
 }
 
 #toggle-content:before {
@@ -122,6 +137,11 @@ body {
     border-radius: 50%;
 }
 
+.author-container { 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 
 
