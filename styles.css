@@ -3,6 +3,12 @@ body {
     font-family: 'HK Grotesk', sans-serif;                                         
 }
 
+
+::selection {
+    background-color: #CBDDD1;
+    color: #ffffff;
+    }
+
 .title { 
     text-align: center
 }
@@ -28,3 +34,15 @@ body {
     width: 150px;
     object-fit: contain;
 }
+
+.author-imgs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.author-item{
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+}
+
