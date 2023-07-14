@@ -32,7 +32,7 @@
          sed felis eget velit aliquet sagittis id. In fermentum et sollicitudin ac 
          orci phasellus egestas.</p>
     <div style="text-align: center;">
-        <button onclick="show()" id="toggle-content">Hide Heat Map</button>
+        <button onclick="show()" id="toggle-content">Hide Live Heat Map</button>
         <div id="interactive-content">
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
@@ -52,12 +52,12 @@
             if (document.getElementById('interactive-content').hidden) {
                 document.getElementById('interactive-content').hidden = false
                 var button = document.getElementById("toggle-content");
-                button.innerHTML = "Hide Heat Map";
+                button.innerHTML = "Hide Live Heat Map";
             }
             else {
                 document.getElementById('interactive-content').hidden = true
                 var button = document.getElementById("toggle-content");
-                button.innerHTML = "Show Heat Map";
+                button.innerHTML = "Show Live Heat Map";
             }
        };
     </script>
