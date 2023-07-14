@@ -16,3 +16,15 @@ body {
     text-align: center;
 
 }
+
+.img-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imgs { 
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
