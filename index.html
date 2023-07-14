@@ -31,21 +31,22 @@
          elementum eu facilisis sed. Lacus sed turpis tincidunt id aliquet. Cras 
          sed felis eget velit aliquet sagittis id. In fermentum et sollicitudin ac 
          orci phasellus egestas.</p>
-
-    <button onclick="show()" value = "Hide Element" id="toggle-content"> Show Element </button>
-    <div id="interactive-content">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-                $(document).ready(function() {
-                $.ajax({
-                    url: 'imgs/fast_000000.html',
-                success: function(data) {
-                    $('#interactive-content').html(data);
-                }
+    <div style="text-align: center;">
+        <button onclick="show()" id="toggle-content">Hide Heat Map</button>
+        <div id="interactive-content">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                    $(document).ready(function() {
+                    $.ajax({
+                        url: 'imgs/fast_000000.html',
+                    success: function(data) {
+                        $('#interactive-content').html(data);
+                    }
+                    });
                 });
-            });
-        </script>
-    </div><br>
+            </script>
+        </div>
+    </div>
     <script>
        function show() {
             if (document.getElementById('interactive-content').hidden) {
