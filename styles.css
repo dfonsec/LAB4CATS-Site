@@ -125,16 +125,34 @@ body {
 
 
 
-.author-imgs {
-    display: flex;
-    justify-content: space-evenly;
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 10px; 
+  place-items: center;
+  
 }
 
-.author-item{
-    height: 145px;
-    width: 145px;
-    border-radius: 50%;
+.top-row, .bottom-row {
+  display: flex;
+  justify-content: space-between;
 }
+
+.bottom-row{
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+
+.author-item{
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin: 10px;
+}
+
 
 .author-container { 
   display: flex;
