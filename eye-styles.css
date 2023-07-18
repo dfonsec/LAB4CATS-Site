@@ -1,0 +1,44 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HK Grotesk', sans-serif;
+}
+
+
+.holy-grail {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+header { 
+    display: flex;
+    justify-content: center;
+}
+
+.holy-grail__main {
+    /* Take the remaining height */
+    flex-grow: 1;
+
+    /* Layout the left sidebar, main content and right sidebar */
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+}
+
+.holy-grail__left {
+    width: 25%;
+    border: 1px solid blue;
+}
+
+.holy-grail__middle {
+    /* Take the remaining width */
+    flex-grow: 1;
+    border: 1px solid gold;
+}
+
+.holy-grail__right {
+    width: 20%;
+    border: 1px solid purple;
+}
