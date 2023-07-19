@@ -30,6 +30,14 @@ body {
 
 .text-content{
     text-align: center;
+
+}
+
+.column-container { 
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding: 10px;
+
 }
 
 .row {
@@ -39,7 +47,7 @@ body {
 
 .column {
   display: flex;
-  flex: 50%;
+  flex: 1;
   border: 1px solid blue;
   justify-content: center;
   align-items: center;
