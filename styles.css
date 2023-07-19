@@ -1,11 +1,12 @@
 
-* { 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'HK Grotesk', sans-serif;
-  background-color: #F6F6E9;
+
+body {
+    background-color: #F6F6E9;
+    font-family: 'HK Grotesk', sans-serif;
+    box-sizing: border-box;                                         
 }
+
+
 
 
 [hidden] {
