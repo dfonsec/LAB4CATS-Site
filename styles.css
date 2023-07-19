@@ -16,6 +16,23 @@ body {
 }
     
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+
 
 .text-content{
     text-align: center;
@@ -30,6 +47,7 @@ body {
 
 .row {
   display: flex;
+  gap: 20px;
 }
 
 .column {
