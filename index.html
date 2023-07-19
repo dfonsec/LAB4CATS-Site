@@ -16,7 +16,7 @@
     <div class="column-container">
         <div class="row">
             <div class="column">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus? Lorem
             </div>
             <div class="column">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore atque iusto odit voluptatibus. Dolorem, soluta cumque sint exercitationem delectus voluptatum porro possimus maxime provident voluptate et quae iusto ab?
@@ -24,59 +24,60 @@
         </div>
     </div>
 
-    
-
-    <h2 class="section-heading">Why quantify static and dynamic biases?</h2>
-
-    <p class="text-content">Models learn features in order to classify videos, but the internal decision-making process is often opaque. Videos have spatial and temporal dimensions, and thus exhibit two kinds of features. Both models and datasets can have these feature biases. 
-    </p>
-
-    <div class="img-container">
-            <img class ="imgs" src="imgs/fast_000000.gif" alt="Animated GIF">
-            <img class="imgs" src="imgs/HeatMap-IMG.png">
-    </div>
-    
-    <div class ="button-container" style="text-align: center;"">
-        <button onclick="show()" id="toggle-content" role="button">Show Live Heat Map</button>
-    </div>
-        <div id="interactive-content">
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script>
-                    $(document).ready(function() {
-                    $.ajax({
-                        url: 'imgs/fast_000000.html',
-                    success: function(data) {
-                        $('#interactive-content').html(data);
-                    }
-                    });
-                    document.getElementById('interactive-content').hidden = true
-                });
-            </script>
+    <div class="column-container">
+        <div class="row">
+            <div class="column">
+                <img class ="imgs" src="imgs/fast_000000.gif" alt="Animated GIF">
+            </div>
+            <div class="column">
+                <div id="interactive-content">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script>
+                                $(document).ready(function() {
+                                $.ajax({
+                                    url: 'imgs/fast_000000.html',
+                                success: function(data) {
+                                    $('#interactive-content').html(data);
+                                }
+                                });
+                            });
+                        </script>
+                </div>
+                
+            </div>
         </div>
-   
-    <script>
-       function show() {
-            if (document.getElementById('interactive-content').hidden) {
-                document.getElementById('interactive-content').hidden = false
-                var button = document.getElementById("toggle-content");
-                button.innerHTML = "Hide Live Heat Map";
-            }
-            else {
-                document.getElementById('interactive-content').hidden = true
-                var button = document.getElementById("toggle-content");
-                button.innerHTML = "Show Live Heat Map";
-            }
-       };
-    </script>
+    </div>
 
-<h2 class="section-heading">Are existing action attention recognition models biased towards spatial or temporal features?</h2>
-
-<p class="text-content">Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Diam donec adipiscing tristique risus nec. Tempor commodo
-   ullamcorper a lacus vestibulum sed arcu. Congue quisque egestas diam in arcu cursus euismod quis. Nisl tincidunt eget nullam 
-   non. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Odio ut enim blandit volutpat maecenas volu
-   tpat blandit. Lobortis feugiat vivamus at augue eget arcu dictum varius. Nisl rhoncus mattis rhoncus urna neque. Id leo in v
-   itae turpis massa sed elementum tempus.</p>
-
+    <div class="column-container">
+        <div class="row">
+            <div class="column">
+                <div class="column-text">
+                    <h2>Synthetic Dataset</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus? Lorem
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-text">
+                    <h2>Model Visualizations</h2>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore atque iusto odit voluptatibus. Dolorem, soluta cumque sint exercitationem delectus voluptatum porro possimus maxime provident voluptate et quae iusto ab?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="column-text">
+                    <h2>Current Results</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus? Lorem
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-text">
+                    <h2>Future Experiments</h2>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore atque iusto odit voluptatibus. Dolorem, soluta cumque sint exercitationem delectus voluptatum porro possimus maxime provident voluptate et quae iusto ab?
+                </div>
+            </div>
+        </div>
+    </div>
 
    <h2 class="section-heading">Authors</h2>
 
