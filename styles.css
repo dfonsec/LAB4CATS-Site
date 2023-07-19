@@ -8,13 +8,14 @@ body {
 
 
 .title { 
-    text-align: center
-}
-
-.section-heading{
-    text-decoration: underline;
     text-align: center;
 }
+
+.section-heading {
+  text-align: center;
+}
+    
+
 
 .text-content{
     text-align: center;
@@ -24,7 +25,7 @@ body {
   max-width: 900px;
   margin: 0 auto; 
   padding: 10px;
-
+  border: 1px solid red;
 }
 
 .row {
@@ -36,7 +37,7 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -49,7 +50,7 @@ body {
 
 .imgs { 
     object-fit: cover;
-    height: 500px;
+    height: 300px;
    
 }
 
@@ -90,10 +91,7 @@ body {
 }
 
 .results { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 
 .author-container { 
