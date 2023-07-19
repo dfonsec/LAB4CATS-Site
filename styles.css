@@ -1,11 +1,11 @@
 
-
-body {
-    background-color: #F6F6E9;
-    font-family: 'HK Grotesk', sans-serif;
-    box-sizing: border-box;                                         
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'HK Grotesk', sans-serif;
+  background-color: #F6F6E9;
 }
-
 
 
 [hidden] {
@@ -29,8 +29,22 @@ body {
 
 .text-content{
     text-align: center;
-
 }
+
+.row {
+  display: flex;
+  border: 1px solid red;
+}
+
+.column {
+  display: flex;
+  flex: 50%;
+  border: 1px solid blue;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 .img-container{
     display: flex;
