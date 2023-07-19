@@ -18,11 +18,10 @@ body {
 
 .text-content{
     text-align: center;
-
 }
 
 .column-container { 
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto; 
   padding: 10px;
 
@@ -41,7 +40,7 @@ body {
 }
 
 
-.img-container{
+.img-container {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 30px;
@@ -55,14 +54,11 @@ body {
 }
 
 
-
 #interactive-content { 
   display: flex;
   padding-top: 15px;
   flex: 1;
   width: fit-content
-  
-  
 }
 
 .container {
@@ -70,7 +66,6 @@ body {
   grid-template-rows: repeat(2, 1fr); 
   gap: 10px; 
   place-items: center;
-  
 }
 
 .top-row, .bottom-row {
@@ -94,11 +89,26 @@ body {
   border: 5px solid black
 }
 
+.results { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .author-container { 
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.definitions {
+  padding: 30px;
+  text-align: center;
+}
+
+.definitions li {
+  margin-bottom: 10px; /* Adjust the value to create even spacing */
 }
 
 a {
