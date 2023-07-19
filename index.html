@@ -16,10 +16,13 @@
     <div class="column-container">
         <div class="row">
             <div class="column">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus? Lorem
+               <p style="font-size: 20px;">Models learn features in order to classify videos, but the internal decision-making process is often opaque. Videos have spatial and temporal dimensions and thus exhibit two kinds of features. Both models and datasets can have these feature biases. </p> 
             </div>
             <div class="column">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore atque iusto odit voluptatibus. Dolorem, soluta cumque sint exercitationem delectus voluptatum porro possimus maxime provident voluptate et quae iusto ab?
+                <ul class="definitions">
+                    <li><em>Static features</em> - Derived from single frames, e.g. texture, color, shape</li>
+                    <li><em>Dynamic features</em> -  Derived from multiple frames, e.g motion</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -30,20 +33,7 @@
                 <img class ="imgs" src="imgs/fast_000000.gif" alt="Animated GIF">
             </div>
             <div class="column">
-                <div id="interactive-content">
-                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                        <script>
-                                $(document).ready(function() {
-                                $.ajax({
-                                    url: 'imgs/heatmap.html',
-                                success: function(data) {
-                                    $('#interactive-content').html(data);
-                                }
-                                });
-                            });
-                        </script>
-                </div>
-                
+                <iframe src="imgs/heatmap.html" height="500" width="500" title="Iframe Example"></iframe>
             </div>
         </div>
     </div>
@@ -53,30 +43,23 @@
             <div class="column">
                 <div class="column-text">
                     <h2>Synthetic Dataset</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus? Lorem
+                    <p style="font-size: 20px;">Real-world videos do not allow for control over exact static or dynamic information; they often contain multiple moving parts, each with its own complex compositions of motions. Hence, we generated a synthetic dataset that allows us to specify the motion and attributes of objects. Each video contains a single ‘target’ object tracing a predefined motion pattern through time, and ‘distractor’ objects in the background. We can therefore use the object’s trajectory as a basis for the dynamic features we expect the model to pick up on. </p>
                 </div>
             </div>
             <div class="column">
                 <div class="column-text">
                     <h2>Model Visualizations</h2>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore atque iusto odit voluptatibus. Dolorem, soluta cumque sint exercitationem delectus voluptatum porro possimus maxime provident voluptate et quae iusto ab?
-                </div>
+                    <p style="font-size: 20px;">To visualize the decision-making process of spatiotemporal models, we use Grad-CAM and a few of its variants, Grad-CAM++ and EigenCAM. GradCAM is a technique that generates coarse localization maps, which highlight the regions of an input that influence a model’s decision-making process. By computing the gradients of a model’s output with respect to the activations of an internal layer, we are able to construct 3D “explanations” of a model’s prediction for any video we pass into it.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="column">
-                <div class="column-text">
-                    <h2>Current Results</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus facilis ad nemo aspernatur. Rerum doloribus odio libero asperiores odit ipsam! Doloremque pariatur ducimus est. Neque, officia delectus? Odio, voluptatibus? Lorem
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-text">
-                    <h2>Future Experiments</h2>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore atque iusto odit voluptatibus. Dolorem, soluta cumque sint exercitationem delectus voluptatum porro possimus maxime provident voluptate et quae iusto ab?
-                </div>
-            </div>
-        </div>
+    </div>
+
+    <div class="results">
+        <h2>Current Results</h2>
+        <ul>
+            <li style="font-size: 20px;">As demonstrated by the 3D volumes above, the prediction’s localization map does not fully match the target object’s true trajectory.  </li>
+            <li style="font-size: 20px;">The preliminary results reveal that the model does not need every frame in order to classify a motion with high accuracy; this suggests that the defining dynamic features of our synthetic motions may not extend throughout an entire motion trajectory.</li>   
+        </ul>
     </div>
 
    <h2 class="section-heading">Authors</h2>
