@@ -2,32 +2,125 @@
 <html lang="en">
 <head>
     <meta charset='UTF-8'>
-    <title>Eye-Tracking</title>
-    <link rel="stylesheet" href="eye-styles.css">
+    <title>Eye-Tracking Team</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.cdnfonts.com/css/hk-groteks" rel="stylesheet">
         
 </head>
 <body>
-    <div class="holy-grail">
-        <div class="header-text">
-            <header><b>Eye-Tracking Team</b></header>
-            <p style="font-size: 15px;">Lab For CATS</p>
+    <div class="title">
+        <h1 style="font-size: 40px">Saliency for Scientific Figures</h1>
+    </div>
+    <div class="column-container">
+        <div class="row">
+            <div class="column">
+                <div class="column-text">
+                    <h2>Overview</h2>
+                    <p style="font-size: 20px;">We will determine if human participants are necessary to quantify the saliency of scientific figures by comparing saliency model performance to BubbleView, web-based eye tracking, and lab eye tracking data.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-text">
+                    <h2>Background</h2>
+                    <p style="font-size: 20px;">Scientific information is important to convey accurately and efficiently, but it is often criticized as inaccessible to non-experts. Graphics are a helpful supporting tool for communicating information, although their effectiveness can vary.
+                    </p>
+            </div>
         </div>
-        
-        <main class="holy-grail__main">
-            <!-- Left sidebar -->
-            <aside class="holy-grail__left">...</aside>
-            
-            <!-- Main content -->
-            <article class="holy-grail__middle">...</article>
-                
-            
-            <!-- Right sidebar -->
-            <nav class="holy-grail__right">...</nav>
-        </main>
-        <footer>...</footer>
+    </div>
+
+   
+
+    <div class="column-container">
+        <div class="row">
+            <div class="column">
+                <img class ="imgs" src="imgs/EyeTrack1.png" alt="Animated GIF">
+            </div>
+            <div class="column">
+                <img class ="imgs" src="imgs/EyeTrack2.png" alt="Animated GIF">
+            </div>
+        </div>
     </div>
 
 
+    <div class="column-container">
+        <div class="row">
+            <div class="column">
+                <div class="column-text">
+                    <h2>Eye-Tracking Methods</h2>
+                    <p style="font-size: 20px;">Using an eye tracker is the most accurate method to gather data, however, it is very inaccessible. Operating the eye tracker requires expertise, which many scientists creating these graphics do not have. The expert’s time and the eye tracker are expensive as well.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-text">
+                    <h2>Experimental Design</h2>
+                    <p style="font-size: 20px;">We seek to improve accessibility of data while maintaining scientific integrity. Using the eye tracker, a web-based eye tracker, and Bubbleview, we will have human participants spend 30 seconds viewing 30 images from IPCC reports. Two pairs of images conveying the same information will have an open-ended question and a multiple-choice question for a case study. One of these images will always be the first image participants see to prime the participants to pay attention to the stimuli. Six other images will have multiple-choice questions, and 20 images will be randomly selected from a pool of 60 with no associated questions.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Eye-Tracking Method</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Web-Based Eye-Tracking</td>
+            <td>Web-based eye trackers offer a cheaper and more accessible way to gather eye tracking information. These eye trackers can be more intuitive to set up, and participants can run the experiments themselves from their own device with a webcam. However, these eye trackers seem to be inaccurate from our experiences. We hope to test this accuracy to determine if these trackers are viable options to assess scientific figures. Examples of eye trackers with live demos that you can try are: GazeRecorder, WebGazer, and RealEye.
+            </td> 
+        </tr>
+        <tr>
+            <td>BubbleView</td>
+            <td>Bubbleview is similar to web-based eye tracking, but it does not require a webcam. Instead, Bubbleview shows participants a blurred image, and users can click the image to reveal the clear image in a circle around their click. These clicks simulate eye movement but may be less accurate. We will test the accuracy of Bubbleview by comparing its results to the lab-based eye tracker.</td> 
+        </tr>
+    </table>
+
+
+    <div class="results">
+        <h2>Saliency-Based Models</h2>
+        <p style="font-size:20px;">Saliency models use neural networks to create heatmaps predicting how likely people are to look at parts of an image. The top-performing models are now based on deep learning and use object detection models as backbones. These models are mostly trained on natural stimuli, so they often perform poorly on figures. While the models perform worse on figures than natural images, we want to see if they are accurate enough to be useful since these models are free and do not require any human participants. 
+        </p>
+    
+    </div>
+
+    
+
+    
+    
+
+  
+   <h2 class="section-heading">Authors</h2>
+
+
+   <div class="container">
+    <div class="top-row">
+        <div class="author-container">
+            <img class ="author-item" src="imgs/headshots/Emily.jpg" alt="Photo 1">
+            <a href="https://www.linkedin.com/in/emily-auyon-8367121b1/">Emily Auyon</a>
+        
+        </div>
+        <div class="author-container">
+            <img class ="author-item" src="imgs/headshots/Jade.JPG" alt="Photo 2">
+            <a href="https://www.linkedin.com/in/jade-kessinger/">Jade Kessinger</a>
+        </div>
+        <div class="author-container">
+            <img class ="author-item" src="imgs/headshots/Sarah.jpeg" alt="Photo 3">
+            <a href="https://www.linkedin.com/in/sarah-qianhua-an/">Sarah An</a>
+        </div>
+    </div>
+  </div>
+  
+
+
+   <h2 class="section-heading">Further Reading</h2>
+
+   <ul>
+    <li><a href="https://www.nature.com/articles/nclimate3162">Harold, Jordan, et al. "Cognitive and psychological science insights to improve climate change data visualization." Nature Climate Change 6.12 (2016): 1080-1089.
+    </a></li>
+    <li><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01541/full">Luo, Yu, and Jiaying Zhao. "Motivated attention in climate change perception and action." Frontiers in Psychology 10 (2019): 1541.
+    </a></li>
+  </ul>
 </body>
 </html>
