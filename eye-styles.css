@@ -1,48 +1,148 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'HK Grotesk', sans-serif;
+
+
+body {
+  background-color: #ffffff;
+  font-family: 'HK Grotesk', sans-serif;
+  box-sizing: border-box;                                         
 }
 
 
-.holy-grail {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
+.title { 
+  text-align: center;
+}
+
+.section-heading {
+text-align: center;
+}
+  
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #f2f2f2;
 }
 
 
 
-.header-text{
-    display: flex;
-    font-size: 30px;
-    flex-flow: column;
-    align-items: center;
+
+.text-content{
+  text-align: center;
 }
 
-.holy-grail__main {
-    /* Take the remaining height */
-    flex-grow: 1;
-    /* Layout the left sidebar, main content and right sidebar */
-    display: flex;
-    flex-direction: row;
-    border: 1px solid green;;
+.column-container { 
+max-width: 900px;
+margin: 0 auto; 
+padding: 10px;
 }
 
-.holy-grail__left {
-    width: 25%;
-    border: 1px solid blue;
+.row {
+display: flex;
+gap: 20px;
 }
 
-.holy-grail__middle {
-    /* Take the remaining width */
-    flex-grow: 1;
-    border: 1px solid gold;
-    
+.column {
+display: flex;
+flex: 1;
+justify-content: center;
+align-items: center;
+text-align: left;
 }
 
-.holy-grail__right {
-    width: 20%;
-    border: 1px solid purple;
+
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+
 }
+
+.imgs { 
+  object-fit: cover;
+  height: 300px;
+ 
+}
+
+
+#interactive-content { 
+display: flex;
+padding-top: 15px;
+flex: 1;
+width: fit-content
+}
+
+.container {
+display: grid;
+grid-template-rows: repeat(2, 1fr); 
+gap: 10px; 
+place-items: center;
+}
+
+.top-row, .bottom-row {
+display: flex;
+justify-content: space-between;
+}
+
+.bottom-row{
+padding-top: 10px;
+justify-content: space-around;
+}
+
+
+.author-item{
+height: 145px;
+width: 145px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;
+margin: 10px;
+border: 5px solid black
+}
+
+.results { 
+text-align: left;
+}
+
+.author-container { 
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.definitions {
+padding: 30px;
+text-align: center;
+}
+
+.definitions li {
+margin-bottom: 10px; /* Adjust the value to create even spacing */
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
